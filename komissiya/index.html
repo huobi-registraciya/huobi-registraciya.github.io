@@ -1,0 +1,784 @@
+<!doctype html>
+
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Huobi Комиссии - структура Комиссии на торги, ввод и вывод</title>
+<meta name="description" content="Большинство популярных криптовалютных бирж, в том числе Huobi, использует общую систему комисии, называемую модель maker / taker">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Зарабатывайте на Криптовалютое в России!">
+<meta property="og:title" content="Huobi Комиссии - структура Комиссии на торги, ввод и вывод">
+<meta property="og:url" content="https://huobi-registraciya.github.io/komissiya/">
+
+
+  <meta property="og:description" content="Большинство популярных криптовалютных бирж, в том числе Huobi, использует общую систему комисии, называемую модель maker / taker">
+
+
+
+  <meta property="og:image" content="https://huobi-registraciya.github.io/assets/images/thumbs/huobi-fees.jpg">
+
+
+
+  <meta name="twitter:site" content="@HuobiGlobal">
+  <meta name="twitter:title" content="Huobi Комиссии - структура Комиссии на торги, ввод и вывод">
+  <meta name="twitter:description" content="Большинство популярных криптовалютных бирж, в том числе Huobi, использует общую систему комисии, называемую модель maker / taker">
+  <meta name="twitter:url" content="https://huobi-registraciya.github.io/komissiya/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://huobi-registraciya.github.io/assets/images/thumbs/huobi-fees.jpg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2019-06-14T00:00:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://huobi-registraciya.github.io/komissiya/">
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://huobi-registraciya.github.io",
+      "logo": "https://huobi-registraciya.github.io/assets/images/site-logo.png"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Huobi Russia",
+      "url": "https://huobi-registraciya.github.io",
+      "sameAs": ["https://twitter.com/HuobiGlobal","https://www.facebook.com/huobiglobalofficial"]
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="mwbE8qrL3QH54Ie4g4mTv94v1S1DZMYVcSp5U5xQMLA" />
+
+
+
+
+  <meta name="yandex-verification" content="544d284525065825">
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Зарабатывайте на Криптовалютое в России! Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(54050665, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/54050665" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">Huobi Russia</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://www.hbg.com/ru-ru/register/?invite_code=yaup3 "  target="_blank" rel="nofollow noopener noreferrer" >Регистрация</a>
+			  <a href="" ></a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.hbg.com/ru-ru/register/?invite_code=yaup3 "  target="_blank" rel="nofollow noopener noreferrer" ></a>
+			  <a href="/russia/" >Блог</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.hbg.com/ru-ru/register/?invite_code=yaup3 "  target="_blank" rel="nofollow noopener noreferrer" ></a>
+			  <a href="/video/" >Видео</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.hbg.com/ru-ru/register/?invite_code=yaup3 "  target="_blank" rel="nofollow noopener noreferrer" ></a>
+			  <a href="/margin-trade/" >Маржинальная Торговля</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.hbg.com/ru-ru/register/?invite_code=yaup3 "  target="_blank" rel="nofollow noopener noreferrer" ></a>
+			  <a href="/#/" >Отзывы</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.hbg.com/ru-ru/register/?invite_code=yaup3 "  target="_blank" rel="nofollow noopener noreferrer" ></a>
+			  <a href="/komissiya/" >Комиссии</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.hbg.com/ru-ru/register/?invite_code=yaup3 "  target="_blank" rel="nofollow noopener noreferrer" ></a>
+			  <a href="/legal/terms/" >Политика конфиденциальности</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Выпадающее меню</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Huobi Комиссии - структура Комиссии на торги, ввод и вывод">
+    <meta itemprop="description" content="Большинство популярных криптовалютных бирж, в том числе Huobi, использует общую систему комисии, называемую модель maker / taker">
+    <meta itemprop="datePublished" content="June 14, 2019">
+     
+	
+    <div class="page__inner-wrap">
+      
+        <header>
+          <!-- <h1 id="page-title" class="page__title" itemprop="headline">Huobi Комиссии - структура Комиссии на торги, ввод и вывод
+</h1> -->
+		  <h1 id="page-title" class="page__title" itemprop="headline">Полная структура комиссии биржи Huobi - торги, ввод и вывод
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 мин на чтение
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> Содержание</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#%D0%BA%D0%BE%D0%BC%D0%B8%D1%81%D1%81%D0%B8%D1%8F-%D0%BC%D0%B5%D0%B9%D0%BA%D0%B5%D1%80%D0%B0-%D0%BB%D0%B8%D0%BC%D0%B8%D1%82%D0%BD%D1%8B%D0%B5-%D0%BE%D1%80%D0%B4%D0%B5%D1%80%D0%B0">Комиссия мейкера (Лимитные ордера)</a></li>
+  <li><a href="#%D0%BA%D0%BE%D0%BC%D0%B8%D1%81%D1%81%D0%B8%D1%8F-%D1%82%D0%B5%D0%B9%D0%BA%D0%B5%D1%80%D0%B0-%D1%80%D1%8B%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5-%D0%BE%D1%80%D0%B4%D0%B5%D1%80%D0%B0">Комиссия тейкера (Рыночные ордера)</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p><em>Большинство популярных криптовалютных бирж, в том числе Huobi, использует общую систему комисии, называемую модель maker / taker</em>
+<img src="/assets/images/russia/huobi-fees.jpg" alt="huobi комиссия"></p>
+
+<table class="responsive-table mar">
+    <caption>Структура комиссии для не ВИП пользователей</caption>
+	<tbody>
+
+
+		<tr>
+			<td data-title="">Торговая пара</td>
+			<td data-title="">Мейкер *</td>
+			<td data-title="">Тейкер *</td>
+			<td data-title="">Комиссия за исполнение</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">BTC/USD</td>
+			<td data-title="Мейкер">0.02%</td>
+			<td data-title="Тейкер">0.03%</td>
+			<td data-title="Комиссия за исполнение">0.015%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">ETH/USD</td>
+			<td data-title="Мейкер">0.02%</td>
+			<td data-title="Тейкер">0.03%</td>
+			<td data-title="Комиссия за исполнение">0.05%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">EOS/USD</td>
+			<td data-title="Мейкер">0.02%</td>
+			<td data-title="Тейкер">0.03%</td>
+			<td data-title="Комиссия за исполнение">0.05%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">LTC/USD</td>
+			<td data-title="Мейкер">0.02%</td>
+			<td data-title="Тейкер">0.03%</td>
+			<td data-title="Комиссия за исполнение">0.05%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">XRP/USD</td>
+			<td data-title="Мейкер">0.02%</td>
+			<td data-title="Тейкер">0.03%</td>
+			<td data-title="Комиссия за исполнение">0.05%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">BCH/USD</td>
+			<td data-title="Мейкер">0.02%</td>
+			<td data-title="Тейкер">0.03%</td>
+			<td data-title="Комиссия за исполнение">0.05%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">TRX/USD</td>
+			<td data-title="Мейкер">0.02%</td>
+			<td data-title="Тейкер">0.03%</td>
+			<td data-title="Комиссия за исполнение">0.05%</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Нет аккаунта Huobi?</p>
+
+<p><a href="https://www.hbg.com/ru-ru/register/?invite_code=yaup3" class="btn btn--success" rel="nofollow noopener noreferrer" target="_blank">Пройдите быструю и простую регистрацию</a></p>
+
+<p>В случае, если в величине транзакционной комиссии или же сроке действия правил начисления комиссии случаться изменения, пожалуйста, обратитесь к официальным объявлениям.</p>
+
+<h2 id="комиссия-мейкера-лимитные-ордера">Комиссия мейкера (Лимитные ордера)</h2>
+<p>Комиссия мейкера оплачивается тогда, когда Вы, путем размещения лимитного заказа на покупку с ценой, ниже текущей цены, или лимитного заказа на продажу с ценой, выше текущей цены, добавляете ликвидные средства в нашу книгу заказов.</p>
+
+<h2 id="комиссия-тейкера-рыночные-ордера">Комиссия тейкера (Рыночные ордера)</h2>
+
+<p>Комиссия тейкера оплачивается тогда, когда Вы, путем размещения заказа, который совпадает с предложением из книги заказов, убираете ликвидные средства из нашей книги заказов. (Пожалуйста, обратите внимание, что когда Ваш лимитный заказ совпадает с лимитным заказом другого пользователя, и при этом его заказ размещен раньше, чем Ваш, Вы заплатите комиссию тейкера.)</p>
+
+<p class="notice--info"><strong>Тейкер</strong> ‒ это тот пользователь, лимитный или рыночный заказ которого совпадает с текущим предложением мейкера.</p>
+
+<p>Когда цена заказа, размещенного Вами, совпадает с ценой других заказов, Вам необходимо оплатить комиссию тейкера.</p>
+
+<p>Отрицательное значение комиссии означает, что комиссия за транзакцию не взимается, и она возвращается в режиме реального времени.</p>
+
+<table class="responsive-table mar">
+    <caption>Структура Мейкера в зависимости от уровней торговли</caption>
+	<tbody>
+		<tr>
+			<td data-title="">Торговля</td>
+			<td colspan="2">1-го уровня</td>
+			<td colspan="2">2-го уровня</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td data-title="">Торговая пара</td>
+			<td data-title="">Мейкер</td>
+			<td data-title="">Тейкер</td>
+			<td data-title="">Мейкер</td>
+			<td data-title="">Тейкер</td>
+			<td data-title="">Исполнение</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">BTC/USD</td>
+			<td data-title="Мейкер">-0.01%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Мейкер">-0.005%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Исполнение">0.015%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">ETH/USD</td>
+			<td data-title="Мейкер">-0.01%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Мейкер">-0.005%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Исполнение">0.05%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">EOS/USD</td>
+			<td data-title="Мейкер">-0.01%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Мейкер">-0.005%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Исполнение">0.05%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">LTC/USD</td>
+			<td data-title="Мейкер">-0.01%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Мейкер">-0.005%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Исполнение">0.05%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">XRP/USD</td>
+			<td data-title="Мейкер">-0.01%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Мейкер">-0.005%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Исполнение">0.05%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">BCH/USD</td>
+			<td data-title="Мейкер">-0.01%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Мейкер">-0.005%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Исполнение">0.05%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">TRX/USD</td>
+			<td data-title="Мейкер">-0.01%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Мейкер">-0.005%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Исполнение">0.05%</td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="responsive-table mar">
+    <caption>Ставка комиссии HBDM для ключевого счета</caption>
+	<tbody>
+		<tr>
+			<td data-title="">Торговая</td>
+			<td colspan="2">HBDM Diamond ВИП</td>
+			<td colspan="2">HBDM Gold ВИП</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td data-title="">Торговая пара</td>
+			<td data-title="">Мейкер</td>
+			<td data-title="">Тейкер</td>
+			<td data-title="">Мейкер</td>
+			<td data-title="">Тейкер</td>
+			<td data-title="">Исполнение</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">BTC/USD</td>
+			<td data-title="Мейкер">0%</td>
+			<td data-title="Тейкер">0.02%</td>
+			<td data-title="Мейкер">0.005%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Исполнение">0.015%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">ETH/USD</td>
+			<td data-title="Мейкер">0%</td>
+			<td data-title="Тейкер">0.02%</td>
+			<td data-title="Мейкер">0.005%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Исполнение">0.05%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">EOS/USD</td>
+			<td data-title="Мейкер">0%</td>
+			<td data-title="Тейкер">0.02%</td>
+			<td data-title="Мейкер">0.005%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Исполнение">0.05%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">LTC/USD</td>
+			<td data-title="Мейкер">0%</td>
+			<td data-title="Тейкер">0.02%</td>
+			<td data-title="Мейкер">0.005%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Исполнение">0.05%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">XRP/USD</td>
+			<td data-title="Мейкер">0%</td>
+			<td data-title="Тейкер">0.02%</td>
+			<td data-title="Мейкер">0.005%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Исполнение">0.05%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">BCH/USD</td>
+			<td data-title="">0%</td>
+			<td data-title="">0.02%</td>
+			<td data-title="">0.005%</td>
+			<td data-title="">0.025%</td>
+			<td data-title="Исполнение">0.05%</td>
+		</tr>
+		<tr>
+			<td data-title="Торговая пара">TRX/USD</td>
+			<td data-title="Мейкер">0%</td>
+			<td data-title="Тейкер">0.02%</td>
+			<td data-title="Мейкер">0.005%</td>
+			<td data-title="Тейкер">0.025%</td>
+			<td data-title="Исполнение">0.05%</td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="responsive-table mar">
+<caption>Комиссия на Криптовалюту и Маржу</caption>
+	<thead>
+		<tr>
+			<td data-title="">Пара</td>
+			<td data-title="">Мейкер</td>
+			<td data-title="">Тейкер</td>
+		</tr>
+</thead>
+<tbody>  
+<tr>                                         
+<td> BTC/USDT </td> 
+<td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ETH/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XRP/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LTC/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BCH/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> EOS/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ETC/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HT/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ADA/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ZEC/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> OMG/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DASH/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> IOTA/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XMR/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HB10/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TRX/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HPT/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BSV/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> RSR/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BTT/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ATOM/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NEW/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ONT/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> IRIS/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ZIL/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> IOST/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TOP/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BTM/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HC/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> PAI/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LAMB/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GXC/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ITC/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TT/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> QTUM/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LINK/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NEO/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DOGE/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ACT/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ELF/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> AE/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HIT/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XLM/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> WICC/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DTA/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> WTC/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SNT/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NAS/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> OCN/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> THETA/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SOC/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MDS/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CMT/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ELA/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CTXC/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LBA/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> RUFF/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BIX/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LET/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SMT/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> VET/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BTS/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> STEEM/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NULS/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> STORJ/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GNT/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> KAN/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XEM/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ZRX/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DCR/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CVC/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NANO/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> WAVES/USDT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> USDT/HUSD </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BTC/HUSD </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ETH/HUSD </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XRP/HUSD </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> EOS/HUSD </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HT/HUSD </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ETH/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XRP/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BCH/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LTC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ETC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> EOS/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ADA/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ZEC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> IOTA/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DASH/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> OMG/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XMR/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> PORTAL/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TRX/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GET/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SHE/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> UUU/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> RSR/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BSV/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CNN/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HPT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> KCASH/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TOPC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BUT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> PC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HOT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ZIL/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ATOM/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> EGCC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BCV/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MEET/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> IRIS/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DAC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NEW/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> WAX/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GSC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> IDT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BTT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TOS/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> FTI/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LAMB/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GTC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TOP/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SSP/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> EKT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DAT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ABT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GXC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LXT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> EKO/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SWFTC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BTM/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> IOST/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ETN/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> PAI/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MEX/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ITC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> IIC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> UC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MUSK/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> PAY/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ONT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> EDU/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DOGE/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LINK/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> AIDOC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GAS/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HIT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ACT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> AAC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> OCN/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> PNT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> UTK/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SEELE/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XTZ/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LOOM/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> EVX/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TRIO/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BOX/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DATX/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> STK/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XLM/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> COVA/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> 18C/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> YEE/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ELA/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MTN/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> UGAS/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NEO/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MXC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BKBT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DBC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ZJLT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BAT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ARDR/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MAN/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> QTUM/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XZC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XMX/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> FAIR/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> AE/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NCC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DTA/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> THETA/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NAS/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TNT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SNT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> YCC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> RCCC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CMT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> WTC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> WAN/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CVCOIN/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SNC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> VET/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MANA/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ELF/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> POLY/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BLZ/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SRN/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DGB/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CHAT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LBA/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NEXO/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BFT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> QUN/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SOC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TNB/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GVE/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NULS/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CTXC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LET/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> PROPY/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NPXS/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> STEEM/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GNX/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BIX/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ZRX/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XVG/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LYM/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> WICC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> RUFF/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> KAN/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> KNC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> QASH/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> RTE/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> REQ/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> KMD/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> QSP/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> UIP/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> PHX/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ICX/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NCASH/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> STORJ/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ZLA/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LUN/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> WPR/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MDS/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XEM/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ENG/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NANO/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DCR/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BTS/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GNT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CVNT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SALT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> APPC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> AST/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> WAVES/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> OST/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CVC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DGD/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ZEN/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SMT/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MTX/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> REN/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MTL/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LSK/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> RCN/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GRS/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MCO/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> RDN/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> POWR/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DOCK/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ADX/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> RBTC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BCD/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SBTC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BIFI/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BCX/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BTG/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> EOS/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ADA/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> OMG/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> IOTA/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XMR/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GET/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TRX/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SHE/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> UUU/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> PORTAL/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DAC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> KCASH/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TOPC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> EKT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SSP/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BUT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CNN/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> PC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HOT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> IRIS/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> IDT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BTT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> FTI/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ATOM/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LAMB/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TOS/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ZIL/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MEET/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GXC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GTC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> EGCC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BCV/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ABT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GSC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MUSK/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> IOST/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ONT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DAT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SWFTC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ITC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BTM/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> EKO/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> WAX/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LOOM/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> PAI/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> RCCC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LXT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> IIC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LINK/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> PNT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> UC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ACT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MEX/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ETN/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HIT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SEELE/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> AE/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> EDU/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BOX/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> UTK/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DOGE/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> OCN/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> QTUM/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ZJLT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> EVX/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BKBT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> UGAS/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> WTC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TRIO/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> AIDOC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> PAY/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BAT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ELF/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MTN/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XLM/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ELA/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LBA/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> 18C/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> YEE/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XMX/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> AAC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BLZ/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NAS/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DATX/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> FAIR/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XTZ/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> WAN/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ARDR/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CMT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MAN/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SNC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CVNT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GVE/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> STK/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> QUN/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BFT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NEXO/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> YCC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> RUFF/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CTXC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BIX/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> THETA/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GAS/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TNT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> WICC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LET/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XZC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> KNC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DTA/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DGB/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NPXS/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MDS/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MANA/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LYM/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> KAN/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NULS/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SMT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> RTE/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> COVA/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NCC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DBC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ZRX/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TNB/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> POLY/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> STEEM/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CHAT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> VET/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GNX/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SRN/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BTS/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SOC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CVCOIN/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> QASH/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XVG/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GNT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ICX/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NCASH/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ENG/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> UIP/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NANO/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> KMD/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DCR/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MTX/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> PROPY/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DGD/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CVC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> WPR/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> AST/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> APPC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> QSP/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MCO/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> WAVES/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> RDN/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> POWR/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LUN/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> GRS/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ZLA/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ZEN/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> SALT/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> REQ/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> REN/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LSK/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DOCK/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> RCN/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ADX/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> OST/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> XRP/HT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> LTC/HT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> BCH/HT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> EOS/HT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> ETC/HT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> DASH/HT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> HPT/HT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> RSR/HT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> NEW/HT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TT/HT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> TOP/HT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> IOST/HT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> KCASH/HT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> MT/HT </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CDC/ETH </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  <tr>                                         <td> CDC/BTC </td>                                         <td> 0.2%</td>                                         <td> 0.2%</td>                                     </tr>  
+	</tbody>
+</table>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Разделы: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/russia" class="page__taxonomy-item" rel="tag">russia</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Дата изменения:</strong> <time datetime="2019-06-14T00:00:00+00:00">14.06.2019</time></p>
+        
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Поделиться</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=HuobiGlobal&amp;text=Huobi+%D0%9A%D0%BE%D0%BC%D0%B8%D1%81%D1%81%D0%B8%D0%B8+-+%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0+%D0%9A%D0%BE%D0%BC%D0%B8%D1%81%D1%81%D0%B8%D0%B8+%D0%BD%D0%B0+%D1%82%D0%BE%D1%80%D0%B3%D0%B8%2C+%D0%B2%D0%B2%D0%BE%D0%B4+%D0%B8+%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4%20https%3A%2F%2Fhuobi-registraciya.github.io%2Fkomissiya%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Поделиться Twitter" rel="nofollow noopener noreferrer" target="_blank"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhuobi-registraciya.github.io%2Fkomissiya%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Поделиться Facebook" rel="nofollow noopener noreferrer" target="_blank"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fhuobi-registraciya.github.io%2Fkomissiya%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Поделиться LinkedIn" rel="nofollow noopener noreferrer" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/russia/huobi-obzor/" class="pagination--pager" title="Huobi Биржа - Обзор Официального Сайта, Плюсы и Минусы
+">Предыдущая</a>
+    
+    
+      <a href="/margin-trade/" class="pagination--pager" title="Huobi - Маржинальная Торговля, Пошаговое Руководство (2019)
+">Следующая</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">Вам также может понравиться</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/thumbs/margin-trade.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/margin-trade/" rel="permalink">Huobi - Маржинальная Торговля, Пошаговое Руководство (2019)
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 мин на чтение
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Торговая платформа Huobi Global предоставляет возможности для маржинальной торговли – это практика использования заимствованных средств для торговли конкретн...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/thumbs/obzor-huobi.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/russia/huobi-obzor/" rel="permalink">Huobi Биржа - Обзор Официального Сайта, Плюсы и Минусы
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  10 мин на чтение
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Совокупный оборот торговой площадки превысил 1,2 триллиона долларов США и Huobi стала крупнейшей в мире биржей цифровых активов с 50% долей в мире.
+
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+    <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <!-- 
+  
+  <ul class="social-icons"> -->
+    <!--  -->
+      <!-- <li><strong>Связаться со мной:</strong></li> -->
+    <!--  -->
+
+    <!--  -->
+      <!--  -->
+        <!--  -->
+          <!-- <li><a href="https://twitter.com/HuobiGlobal" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li> -->
+        <!--  -->
+      <!--  -->
+        <!--  -->
+          <!-- <li><a href="https://github.com/huobi-registraciya" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li> -->
+        <!--  -->
+      <!--  -->
+        <!--  -->
+          <!-- <li><a href="https://instagram.com/huobiglobalofficial" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li> -->
+        <!--  -->
+      <!--  -->
+    <!--  -->
+
+    <!-- <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> RSS-лента</a></li> -->
+  <!-- </ul> 
+  
+  -->
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Huobi Russia. </div>
+<div class="page__footer-copyright">
+<p><a href="/legal/terms/">Условия и политика конфиденциальности</a></p>
+<p><a href="#" class="back_to_top">Наверх</a></p>
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+
+
+<!-- Including InstantSearch.js library and styling -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css">
+
+<script>
+// Instanciating InstantSearch.js with Algolia credentials
+const search = instantsearch({
+  appId: 'AV72C2PGUX',
+  apiKey: 'ee471767d8561e45832eaddc8326cd71',
+  indexName: 'viktor',
+  searchParameters: {
+    restrictSearchableAttributes: [
+      'title',
+      'content'
+    ]
+  }
+});
+
+const hitTemplate = function(hit) {
+  const url = hit.url;
+  const title = hit._highlightResult.title.value;
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="list__item">
+      <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="${url}">${title}</a></h2>
+        <div class="archive__item-excerpt" itemprop="description">${content}</div>
+      </article>
+    </div>
+  `;
+}
+
+// Adding searchbar and results widgets
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '.search-searchbar',
+    poweredBy: true,
+    placeholder: 'Введите поисковый запрос...'
+  })
+);
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '.search-hits',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+// Starting the search
+search.start();
+</script>
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142077951-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142077951-1', { 'anonymize_ip': true});
+</script>
+
+
+
+
+
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  
+
+
+
+
+
+  </body>
+</html>
